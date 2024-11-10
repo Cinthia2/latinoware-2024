@@ -19,8 +19,6 @@ O Visual Studio Code (VSCode) é um editor de código-fonte desenvolvido pela Mi
 
 ## 3 Passo: Inicialização do projeto no VSCode
 
-
-
 Verificar se a instalação deu certo e quais são as versões correspondentes do Node.js e do gerenciador de depêndencias NPM (Node Package Manager).
 
 Na pasta do projeto dentro do terminal do VSCode digite:
@@ -51,6 +49,13 @@ Em seguida, instale o framework Cypress:
 ```bash
 npm install cypress
 ```
+
+
+
+## 4° Passo: Instalação do GIT no Windows
+O Git é um sistema de controle de versão distribuído, criado por Linus Torvalds em 2005, que permite a desenvolvedores gerenciar e acompanhar o histórico de mudanças em código-fonte ou qualquer tipo de arquivo.
+
+#### 🔗 Disponível em: https://git-scm.com/download/win 
 
 ## 🔗 Link Meu Contato
 
