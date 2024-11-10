@@ -17,7 +17,7 @@ O Visual Studio Code (VSCode) é um editor de código-fonte desenvolvido pela Mi
 
 
 
-## 3 Passo: Inicialização do projeto no VSCode
+## 3º Passo: Inicialização do projeto no VSCode
 
 Verificar se a instalação deu certo e quais são as versões correspondentes do Node.js e do gerenciador de depêndencias NPM (Node Package Manager).
 
