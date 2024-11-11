@@ -1,5 +1,9 @@
 
-# Exemplo de um teste automatizado (testando a interface) e2e
+# Exemplos de testes automatizados com Cypress
+### Teste automatizado para testar a insterface (e2e)
+Arquivo `latinoware-api.cy.js`
+### Teste automatizado para testar a API (Application Programming Interface)
+Arquivo `latinoware-api.cy.js`
 
 Projeto para a Apresetação da Palestra Do Zero ao QA: Começando sua Jornada em Qualidade de Software.
 
@@ -50,9 +54,24 @@ Em seguida, instale o framework Cypress:
 npm install cypress
 ```
 
+## 4° Passo: Abrindo a interface do Cypress
+Digite o comando direto:
+```bash
+npx cypress open
+```
+Ou digite o comando que foi configurado na chave `test` dentro do package.json, para executar a abertura do Cypress. 
+```bash
+npm run test
+```
+Após isso, permita a abertura da aplicação em sua máquina. 
 
+- Selecione a opção `E2E Testing`.
+- Clique em `Continue`
+- Selecione o navegador de sua preferência: `Chrome`, `Edge` ou `Electron`.
 
-## 4° Passo: Instalação do GIT no Windows
+#### 🔗 Para mais informações sobre o Cypress, acesse a documentação: https://www.cypress.io/
+
+## 5° Passo: Instalação do GIT no Windows 
 O Git é um sistema de controle de versão distribuído, criado por Linus Torvalds em 2005, que permite a desenvolvedores gerenciar e acompanhar o histórico de mudanças em código-fonte ou qualquer tipo de arquivo.
 
 #### 🔗 Disponível em: https://git-scm.com/download/win 

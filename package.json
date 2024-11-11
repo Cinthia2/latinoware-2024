@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "cypress": "^13.15.2"
+  },
+  "name": "latinoware",
+  "version": "1.0.0",
+  "description": "Este projeto  tem como intuito auxiliar no aprendizado e na realização de testes automatizados e2e, utilizando o framework Cypress.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cinthia2/latinoware-2024.git"
+  },
+  "author": "Cinthia Rodrigues da Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cinthia2/latinoware-2024/issues"
+  },
+  "homepage": "https://github.com/Cinthia2/latinoware-2024#readme"
+}
