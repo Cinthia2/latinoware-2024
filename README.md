@@ -102,23 +102,19 @@ reporterOptions: {
 ```
 
 ### 5.3. Gerando a pasta Report para armazenar os relatórios
+
+Para criar a pasta `report` e gerar um relatório, digite:
+``` 
+npx cypress run --spec "cypress\e2e\3-latinoware-2024\latinoware-e2e.cy.js" --reporter mochawesome
+```
+
+Ou, caso deseje criar relatório com todos os testes basta utilizar o comando:
+
 ```
 npx cypress run –-reporter mochawesome 
 ```
 
-### 5.4. Gerando os Relatórios
-
-Após rodar os testes, execute:
-   ```
-   npx cypress run --spec "cypress\e2e\3-latinoware-2024\latinoware-e2e.cy.js"
-   ```
-   ou
-   ```
-npx cypress run --spec "cypress\e2e\3-latinoware-2024\latinoware-api.cy.js"
-   ```
-
-
-O relatório será gerado na pasta `cypress/reports`.
+O relatório será gerado na pasta `cypress/e2e/report`.
 
 
 
