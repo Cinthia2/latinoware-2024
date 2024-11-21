@@ -1,12 +1,12 @@
 
 # Exemplos de testes automatizados com Cypress
+
+Projeto para a Apresentação da Palestra Do Zero ao QA: Começando sua Jornada em Qualidade de Software.
+
 ### Teste automatizado para testar a insterface (e2e)
-Arquivo `latinoware-api.cy.js`
+Arquivo `latinoware-e2e.cy.js`
 ### Teste automatizado para testar a API (Application Programming Interface)
 Arquivo `latinoware-api.cy.js`
-
-Projeto para a Apresetação da Palestra Do Zero ao QA: Começando sua Jornada em Qualidade de Software.
-
 
 ## 1° Passo: Instalação do Node.js 
 Instalação do Node.js (é uma plataforma de execução de código JavaScript no lado do servidor).
@@ -14,7 +14,7 @@ Instalação do Node.js (é uma plataforma de execução de código JavaScript n
 
 #### 🔗 Disponível em: https://nodejs.org/pt-br/
 
-## 2° Passo: Instalação da IDE VSCode
+## 2° Passo: Instalação do editor de código-fonte VSCode
 O Visual Studio Code (VSCode) é um editor de código-fonte desenvolvido pela Microsoft, lançado em 2015, que se tornou uma das ferramentas mais populares entre desenvolvedores. 
 
 #### 🔗 Disponível em: https://code.visualstudio.com/download
@@ -51,7 +51,7 @@ Após isso, responda as perguntas que irão ser gravadas no arquivo gerado packa
 Em seguida, instale o framework Cypress:
 
 ```bash
-npm install cypress
+npm install cypress --save-dev
 ```
 
 ## 4° Passo: Abrindo a interface do Cypress
@@ -71,7 +71,58 @@ Após isso, permita a abertura da aplicação em sua máquina.
 
 #### 🔗 Para mais informações sobre o Cypress, acesse a documentação: https://www.cypress.io/
 
-## 5° Passo: Instalação do GIT no Windows 
+
+## 5º Passo: Gerando Relatórios com Mochawesome
+
+### 5.1. Instalação do Mochawesome
+
+Para gerar relatórios com o Mochawesome, instale-o no projeto:
+
+```
+npm i -D mochawesome
+```
+
+### 5.2. Configurando o Mochawesome
+
+No arquivo `cypress.config.js`, adicione a seguinte configuração:
+
+```js
+reporterOptions: {
+       reportDir: "cypress/report/mochawesome-report",
+       overwrite : false,
+       json : false,
+       html : true,
+       timestamp: 'dd-mm-yyyy',
+       reportFilename: '[name]_data_do__teste_[datetime]'+ '_' + data.getHours() + 'h'+
+       data.getMinutes() + 'm' + '_Status_[status]',
+
+   },
+
+
+```
+
+### 5.3. Gerando a pasta Report para armazenar os relatórios
+```
+npx cypress run –-reporter mochawesome 
+```
+
+### 5.4. Gerando os Relatórios
+
+Após rodar os testes, execute:
+   ```
+   npx cypress run --spec "cypress\e2e\3-latinoware-2024\latinoware-e2e.cy.js"
+   ```
+   ou
+   ```
+npx cypress run --spec "cypress\e2e\3-latinoware-2024\latinoware-api.cy.js"
+   ```
+
+
+O relatório será gerado na pasta `cypress/reports`.
+
+
+
+## 6° Passo: Instalação do GIT no Windows 
 O Git é um sistema de controle de versão distribuído, criado por Linus Torvalds em 2005, que permite a desenvolvedores gerenciar e acompanhar o histórico de mudanças em código-fonte ou qualquer tipo de arquivo.
 
 #### 🔗 Disponível em: https://git-scm.com/download/win 

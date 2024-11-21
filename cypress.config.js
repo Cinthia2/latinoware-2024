@@ -1,5 +1,7 @@
 const { defineConfig } = require("cypress");
 
+const data = new Date()
+
 module.exports = defineConfig({
   e2e: {
     //baseUrl: 'https://nome-da-url-base                                                  ',
@@ -11,6 +13,16 @@ module.exports = defineConfig({
       // implement node event listeners here
       
     },
+
+  },
+  reporterOptions: {
+    reportDir: "cypress/report",
+    overwrite : false,
+    json : false,
+    html : true,
+    timestamp: 'dd-mm-yyyy',
+    reportFilename: '[name]_data_do__teste_[datetime]'+ '_' + data.getHours() + 'h'+
+    data.getMinutes() + 'm' + '_Status_[status]',
 
   },
 });
