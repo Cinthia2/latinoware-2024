@@ -3,3 +3,4 @@ node_modules
 .mp4
 cypress.env.json
 cypress/fixtures/example.json
+cypress/fixtures/usuarios.json
