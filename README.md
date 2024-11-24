@@ -6,7 +6,7 @@ Projeto para a Apresentação da Palestra Do Zero ao QA: Começando sua Jornada 
 ### Teste automatizado para testar a insterface (e2e)
 Arquivo `latinoware-e2e.cy.js`
 ### Teste automatizado para testar a API (Application Programming Interface)
-Arquivo `latinoware-api.cy.js`
+Arquivo `latinoware-api-fake.cy.js`
 
 ## 1° Passo: Instalação do Node.js 
 Instalação do Node.js (é uma plataforma de execução de código JavaScript no lado do servidor).
