@@ -4,7 +4,7 @@ const data = new Date()
 
 module.exports = defineConfig({
   e2e: {
-    //baseUrl: 'https://nome-da-url-base                                                  ',
+    baseUrl: 'http://latinoware.api.prod:8080/api/',
     testIsolation: false,
     defaultCommandTimeout:10000,
     pageLoadTimeout: 12000,
