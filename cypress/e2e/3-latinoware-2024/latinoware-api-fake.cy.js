@@ -1,5 +1,5 @@
 beforeEach(() => {
- //caso quisesse logar ou executar alguma instr
+ //caso quisesse logar ou executar alguma instrução antes de executar cada teste
 })
 
 const data = new Date();
